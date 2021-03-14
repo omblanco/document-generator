@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.omblanco.document.generator</groupId>
-	<artifactId>document-generator-engine</artifactId>
+	<artifactId>document-generator-store</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>document-generator-engine</name>
-	<description>document-generator-engine</description>
+	<name>document-generator-store</name>
+	<description>document-generator-store</description>
 	
 	<properties>
 		<java.version>11</java.version>
@@ -27,10 +27,15 @@
 			<artifactId>modelmapper</artifactId>
 			<version>${modelmapper.version}</version>
 		</dependency>
-
+	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 
 		<dependency>
@@ -50,11 +55,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 		
 		<dependency>

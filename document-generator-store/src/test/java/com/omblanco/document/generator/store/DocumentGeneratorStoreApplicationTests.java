@@ -1,0 +1,15 @@
+package com.omblanco.document.generator.store;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@Disabled
+@SpringBootTest
+class DocumentGeneratorStoreApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
