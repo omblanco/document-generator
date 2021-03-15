@@ -19,7 +19,7 @@ import reactor.core.publisher.Mono;
 
 @AllArgsConstructor
 @RestController(ExporterQualifiersConstants.Controller.APP_INFO_CONTROLLER)
-@RequestMapping(ExporterWebConstants.Paths.SYSTEM)
+@RequestMapping(ExporterWebConstants.Paths.System.SYSTEM)
 public class AppInfoController {
 
     
@@ -31,7 +31,7 @@ public class AppInfoController {
      * Recupera el estado de la aplicación
      * @return
      */
-    @GetMapping(ExporterWebConstants.Paths.AppInfo.GET)
+    @GetMapping(ExporterWebConstants.Paths.System.AppInfo.GET)
     public Mono<ResponseEntity<AppInfoDTO>> getAppInfo() {
         return appInfoService.getAppInfo()
                 .map(this :: convertBoToDto)

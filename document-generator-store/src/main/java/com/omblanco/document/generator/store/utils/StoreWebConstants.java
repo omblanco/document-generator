@@ -7,14 +7,20 @@ public class StoreWebConstants {
             // Empty
         }
         
-        public static final String SYSTEM = "/api/store/system";
-        
-        public final class AppInfo {
-            private AppInfo() {
+        public final class System {
+            private System() {
                 // Empty
             }
             
-            public static final String GET = "/status";
+            public static final String SYSTEM = "/system";
+            
+            public final class AppInfo {
+                private AppInfo() {
+                    // Empty
+                }
+                
+                public static final String GET = "/status";
+            }
         }
     }
 }
