@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.omblanco.document.generator</groupId>
 	<artifactId>document-generator-exporter</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>document-generator-exporter</name>
 	<description>document-generator-exporter</description>
 	
