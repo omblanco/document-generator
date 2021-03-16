@@ -17,10 +17,24 @@
 	<properties>
 		<java.version>11</java.version>
 		<modelmapper.version>2.3.9</modelmapper.version>
+		<camel.version>3.8.0</camel.version>
 	</properties>
 	
 	<dependencies>
-	
+
+		<!-- Camel Starter -->
+		<dependency>
+			<groupId>org.apache.camel.springboot</groupId>
+			<artifactId>camel-spring-boot-starter</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.camel.springboot</groupId>
+			<artifactId>camel-quartz-starter</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+		
 		<!-- Modelmapper -->
 		<dependency>
 			<groupId>org.modelmapper</groupId>
